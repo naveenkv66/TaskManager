@@ -1,0 +1,18 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/TaskManager.API/.vs
+/TaskManager.API/packages
+/TaskManager.API/Task.BusinessLayer/bin/Debug
+/TaskManager.API/Task.BusinessLayer/obj/Debug
+/TaskManager.API/Task.DataAccessLayer/bin/Debug
+/TaskManager.API/Task.DataAccessLayer/obj/Debug
+/TaskManager.API/Task.NUnitTest/bin/Debug
+/TaskManager.API/Task.NUnitTest/obj/Debug
+/TaskManager.API/TaskManagerAPI/bin
+/TaskManager.API/TaskManagerAPI/obj/Debug
+/PresentationLayer/.vscode
+/TaskManager.API/Task.BusinessLayer/obj/Release
+/TaskManager.API/Task.DataAccessLayer/obj/Release
