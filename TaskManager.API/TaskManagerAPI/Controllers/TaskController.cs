@@ -28,9 +28,9 @@ namespace TaskManagerAPI.Controllers
         {
             Collection<TaskModel> tasks = new Collection<TaskModel>();
 
-            var blTasks = _taskManagerBL.GetTask();
-            blTasks.ToList().ForEach(
-               x => tasks.Add(
+            var blTasks = _taskManagerBL?.GetTask();
+            blTasks?.ToList().ForEach(
+               x => tasks?.Add(
                    new TaskModel
                    {
                        TaskID = x.TaskID,
@@ -52,8 +52,8 @@ namespace TaskManagerAPI.Controllers
         {
             Collection<string> tasks = new Collection<string>();
 
-            var blTasks = _taskManagerBL.GetParentTasks(taskId);
-            blTasks.ToList().ForEach(x => tasks.Add(x));
+            var blTasks = _taskManagerBL?.GetParentTasks(taskId);
+            blTasks?.ToList()?.ForEach(x => tasks.Add(x));
 
             return Ok(tasks);
 
